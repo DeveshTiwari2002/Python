@@ -36,7 +36,10 @@ def user_try(cg):
 
     if ug == cg:
       print('You guessed it right!')
-      break
+      time.sleep(2)
+      os.system('clear')
+      welcome()
+
     if ug > cg:
       if x < 5:
         print('Try again! Your guess is greater.')
@@ -51,7 +54,6 @@ def user_try(cg):
       os.system('clear')
       welcome()
 welcome()
-
 
 
 
