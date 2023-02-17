@@ -35,7 +35,7 @@ def user_try(cg):
     ug = int(input('Enter ' + str(x) + ' Try! --> '))
 
     if ug == cg:
-      print('Great')
+      print('You guessed it right!')
       break
     if ug > cg:
       if x < 5:
