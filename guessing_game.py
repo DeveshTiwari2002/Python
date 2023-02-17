@@ -1,5 +1,6 @@
 import random as rnd
 import os
+import time
 
 
 def welcome():
@@ -21,8 +22,9 @@ def welcome():
 
 
 def computers_guess():
-  list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-  return rnd.choice(list)
+  #list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  #return rnd.choice(list)
+  return rnd.randrange(1, 10)
 
 
 def user_try(cg):
@@ -45,9 +47,11 @@ def user_try(cg):
 
     if x == 5:
       print('You are terminated')
+      time.sleep(2)
       os.system('clear')
       welcome()
 welcome()
+
 
 
 
